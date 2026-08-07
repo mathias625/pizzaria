@@ -1,0 +1,271 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2026-08-05T17:20:32.218Z",
+  "__export_source": "backend-aula",
+  "resources": [
+    {
+      "_id": "wrk_backend",
+      "_type": "workspace",
+      "name": "Backend Aula"
+    },
+    {
+      "_id": "fld_back",
+      "_type": "request_group",
+      "parentId": "wrk_backend",
+      "name": "back"
+    },
+    {
+      "_id": "fld_Pizza",
+      "_type": "request_group",
+      "parentId": "fld_back",
+      "name": "Pizza"
+    },
+    {
+      "_id": "req_Pizza_GET_ALL",
+      "_type": "request",
+      "parentId": "fld_Pizza",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Listar",
+      "method": "GET",
+      "url": "http://localhost:3000/pizza/listar"
+    },
+    {
+      "_id": "req_Pizza_GET_ID",
+      "_type": "request",
+      "parentId": "fld_Pizza",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Buscar",
+      "method": "GET",
+      "url": "http://localhost:3000/pizza/buscar/:id"
+    },
+    {
+      "_id": "req_Pizza_POST",
+      "_type": "request",
+      "parentId": "fld_Pizza",
+      "name": "Cadastrar",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "method": "POST",
+      "url": "http://localhost:3000/pizza/cadastrar",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"sabor\": \"string\",\n  \"preco\": 0\n}"
+      }
+    },
+    {
+      "_id": "req_Pizza_PUT",
+      "_type": "request",
+      "parentId": "fld_Pizza",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Atualizar",
+      "method": "PUT",
+      "url": "http://localhost:3000/pizza/atualizar/:id",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"sabor\": \"string\",\n  \"preco\": 0\n}"
+      }
+    },
+    {
+      "_id": "req_Pizza_DELETE",
+      "_type": "request",
+      "parentId": "fld_Pizza",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Excluir",
+      "method": "DELETE",
+      "url": "http://localhost:3000/pizza/excluir/:id"
+    },
+    {
+      "_id": "fld_Pedido",
+      "_type": "request_group",
+      "parentId": "fld_back",
+      "name": "Pedido"
+    },
+    {
+      "_id": "req_Pedido_GET_ALL",
+      "_type": "request",
+      "parentId": "fld_Pedido",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Listar",
+      "method": "GET",
+      "url": "http://localhost:3000/pedido/listar"
+    },
+    {
+      "_id": "req_Pedido_GET_ID",
+      "_type": "request",
+      "parentId": "fld_Pedido",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Buscar",
+      "method": "GET",
+      "url": "http://localhost:3000/pedido/buscar/:id"
+    },
+    {
+      "_id": "req_Pedido_POST",
+      "_type": "request",
+      "parentId": "fld_Pedido",
+      "name": "Cadastrar",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "method": "POST",
+      "url": "http://localhost:3000/pedido/cadastrar",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"cliente\": \"string\",\n  \"endereco\": \"string\",\n  \"telefone\": \"string\",\n  \"PizzaId\": 0\n}"
+      }
+    },
+    {
+      "_id": "req_Pedido_PUT",
+      "_type": "request",
+      "parentId": "fld_Pedido",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Atualizar",
+      "method": "PUT",
+      "url": "http://localhost:3000/pedido/atualizar/:id",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"cliente\": \"string\",\n  \"endereco\": \"string\",\n  \"telefone\": \"string\",\n  \"PizzaId\": 0\n}"
+      }
+    },
+    {
+      "_id": "req_Pedido_DELETE",
+      "_type": "request",
+      "parentId": "fld_Pedido",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Excluir",
+      "method": "DELETE",
+      "url": "http://localhost:3000/pedido/excluir/:id"
+    },
+    {
+      "_id": "fld_Usuario",
+      "_type": "request_group",
+      "parentId": "fld_back",
+      "name": "Usuario"
+    },
+    {
+      "_id": "req_Usuario_GET_ALL",
+      "_type": "request",
+      "parentId": "fld_Usuario",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Listar",
+      "method": "GET",
+      "url": "http://localhost:3000/usuario/listar"
+    },
+    {
+      "_id": "req_Usuario_GET_ID",
+      "_type": "request",
+      "parentId": "fld_Usuario",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Buscar",
+      "method": "GET",
+      "url": "http://localhost:3000/usuario/buscar/:id"
+    },
+    {
+      "_id": "req_Usuario_POST",
+      "_type": "request",
+      "parentId": "fld_Usuario",
+      "name": "Cadastrar",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "method": "POST",
+      "url": "http://localhost:3000/usuario/cadastrar",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"string\",\n  \"email\": \"string\",\n  \"senha\": \"string\"\n}"
+      }
+    },
+    {
+      "_id": "req_Usuario_PUT",
+      "_type": "request",
+      "parentId": "fld_Usuario",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Atualizar",
+      "method": "PUT",
+      "url": "http://localhost:3000/usuario/atualizar/:id",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"string\",\n  \"email\": \"string\",\n  \"senha\": \"string\"\n}"
+      }
+    },
+    {
+      "_id": "req_Usuario_DELETE",
+      "_type": "request",
+      "parentId": "fld_Usuario",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Excluir",
+      "method": "DELETE",
+      "url": "http://localhost:3000/usuario/excluir/:id"
+    }
+  ]
+}

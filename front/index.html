@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Pizzaria</h1>
+    <button onclick="abrirCadastro()">Cadastrar Pizza</button>
+</header>
+
+<main>
+    <div id="pizzas"></div>
+</main>
+
+<div id="modal" class="modal">
+    <div class="card">
+        <h2>Cadastrar Pizza</h2>
+
+        <input type="text" id="nome" placeholder="Nome da pizza">
+
+        <input type="number" id="preco" placeholder="Preço">
+
+        <div class="botoes">
+            <button onclick="salvarPizza()">Salvar</button>
+            <button onclick="fecharCadastro()">Cancelar</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
